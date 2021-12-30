@@ -33,6 +33,7 @@
                             <a href="Events.html" class="nav-item nav-link  text-center px-3 active">Events</a>
                             <a href="Donation.html" class="nav-item nav-link text-center px-3 active">Donations</a>
                             <a href="Contactus.html" class="nav-item nav-link text-center bg-green px-3 active">Contact Us</a>
+                            <a href="Construction.html" class="nav-item nav-link text-center bg-green px-3 active">Construction Updates</a>
                         </div>
                     </div>
                 </div>
@@ -103,12 +104,15 @@
         </div>
         <hr class="bg-danger border-2 border-top border-success">
     </div>
+
     <div class="container foot">
         <!-- Footer -->
         <footer class="page-footer font-small blue pt-4">
 
             <!-- Footer Links -->
             <div class="container-fluid text-center text-md-left">
+
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
                 <!-- Grid row -->
                 <div class="row">
@@ -117,21 +121,21 @@
                     <div class="col-md-6 mt-md-0 mt-3">
 
                         <!-- Content -->
-                        <h5 class="text-uppercase">
+                        <h5 class="text-uppercase ">
                             <img src="images/logo.jpg" class="fimage" alt="logo icon">
                             Islamic Center of Laveen
                         </h5>
-                        <p>
+                        <p class="h6 p-2">
                             <img src="images/address.png" class="fimage" alt="address icon">
                             5099 W Dobbins Rd #1, Laveen Village, AZ 85339
                         </p>
-                        <p>
+                        <p class="h6 p-2">
                             <img src="images/phone.png" class="fimage" alt="phone icon">
                             (602) 237-2666
                         </p>
-                        <p>
+                        <p class="h6 p-2">
                             <img src="images/email.png" class="fimage" alt="email icon">
-                            board@icl.com
+                            secretary@iclaveen.net </br> it@iclaveen.net
                         </p>
 
                     </div>
@@ -143,20 +147,23 @@
                     <div class="col-md-3 mb-md-0 mb-3">
 
                         <!-- Links -->
-                        <h5 class="text-uppercase">Important links</h5>
+                        <h5 class="text-uppercase text-decoration-underline">Important links</h5>
 
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="https://www.islamicfinder.org/islamic-calendar/">Islamic Calendar</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="https://www.islamicfinder.org/islamic-calendar/">Islamic
+                                    Calendar</a>
                             </li>
-                            <li>
-                                <a href="https://www.muslim-library.com/?lang=English">Muslim e-Library</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="https://www.muslim-library.com/?lang=English">Muslim
+                                    e-Library</a>
                             </li>
-                            <li>
-                                <a href="https://quran.com/">Nobal Quran</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="https://quran.com/">Nobal Quran</a>
                             </li>
-                            <li>
-                                <a href="https://www.azmuslims.org/list-of-mosques-in-arizona.html">Masjids in
+                            <li class="p-1 h6">
+                                <a class="flink"
+                                    href="https://www.azmuslims.org/list-of-mosques-in-arizona.html">Masjids in
                                     Arizona</a>
                             </li>
                         </ul>
@@ -168,21 +175,20 @@
                     <div class="col-md-3 mb-md-0 mb-3">
 
                         <!-- Links -->
-                        <h5 class="text-uppercase">Reach Us</h5>
+                        <h5 class="text-uppercase text-decoration-underline">Reach Us</h5>
 
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="Donation.html">Donations</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="Donation.html">Donations</a>
                             </li>
-                            <li>
-                                <a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSe9zggU7zEV70vc3njbnN2gjgTcMr3Vze4k2RoNbE1HqbTAfw/viewform">Membership</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="Membership.html">Membership</a>
                             </li>
-                            <li>
-                                <a href="AboutUs.html">About Us</a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="AboutUs.html">About Us</a>
                             </li>
-                            <li>
-                                <a href="Education.html">Al-Noor School at ICL </a>
+                            <li class="p-1 h6">
+                                <a class="flink" href="Education.html">Al-Noor School at ICL </a>
                             </li>
                         </ul>
 
@@ -204,6 +210,30 @@
         </footer>
         <!-- Footer -->
     </div>
+
+    <!--Scroll to the top button-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 
 </html>

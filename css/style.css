@@ -1,6 +1,7 @@
 body {
   /* background-color: #48cae4; */
-  background-color: #a7c957 !important;
+  background-color: #a7c957 !important; 
+ /* background-color:lightgrey; */
   overscroll-behavior: contain !important;
 
 }
@@ -37,29 +38,10 @@ body {
   padding-top: 20px ;
   padding-bottom: 20px;
 }
-.slide {
-  height: 100%;
-  width: 100%;
-}
-
-.bg-img {
-  /* The image used */
-  background-image: url("home-image.jpg");
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely */ 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
 
 .icon {
   padding-right: 5px;
-  height: 35px;
+  height: 30px;
   width: 40px;
   position: relative;
 
@@ -114,13 +96,22 @@ body {
   padding-top: -10px !important;
 }
 
+a:link {
+  text-decoration: none;
+}
+/* mouse over link */
 a:hover {
   background-color: green;
+  color: whitesmoke;
+}
+
+a.flink {
+  color: black;
 }
 
 .foot {
   background-image: url('../images/green.jpeg');
-  
+  background-color: teal;
 }
 
 #myBtn {
