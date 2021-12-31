@@ -128,16 +128,16 @@
                 </div>
             </div>
 
-            <div class="col-md-6 p-2 ">
+            <div class="col-md-6 p-4 ">
                 <h5 class="text-center">
                     <img src="images/time.png" class="icon" alt="Salah time icon">
                     Prayer Times
                 </h5>
                 <!-- Hijiri Date jquery element-->
-                <div class="my-date text-center"></div>
-                <div class="my-date text-center" id="today-date"></div>
+                <div class="date text-center my-date"></div>
+                <div class="date text-center" id="today-date"></div>
 
-                <div class="col-md-6 mx-auto">
+                <div class="col-md-6 mx-auto p-4">
                     <table class="table table-borderless text-center ">
                         <thead>
                             <tr class="table-success">
@@ -194,6 +194,27 @@
                     class="btn btn-success btn-lg">Donate
                     Today</a>
             </div>
+            <div class="row p-4">
+                <h4 class="text-center">
+                    <img src="images/paypal.png" class="icon" alt="PayPal icon">
+                     Donate with PayPal
+                </h4>
+                <div class="text-center">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    
+                        <!-- Saved buttons use the "secure click" command -->
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                      
+                        <!-- Saved buttons are identified by their button IDs -->
+                        <input type="hidden" name="hosted_button_id" value="108117">
+                      
+                        <!-- Saved buttons display an appropriate button image. -->
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                       
+                      </form>
+                </div>
+            </div>
         </div>
         <hr class="bg-danger border-2 border-top border-success">
     </div>
@@ -209,30 +230,30 @@
             <div class="col-lg-4 p-1">
                 <div class=" colum-1">
                     <div class="text-center text-light">
-                        <h4>Friday Night Halaka</h4>
-                        <p>By: Shaike Mahmood Idris</p>
-                        <p>Topic: Simplicity in Life</p>
-                        <h3>Friday Jan 11th, 2022</h3>
+                        <h4 class="p-2">Friday Night Halaka</h4>
+                        <p class="h5">By: Shaike Mahmood Idris</p>
+                        <p class="h6">Topic: Simplicity in Life</p>
+                        <div class="h5" id="nextFriday"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 p-1">
                 <div class="colum-2">
                     <div class="text-center text-light">
-                        <h4>Youth Program</h4>
-                        <p>By: Shaike Mahmood Idris</p>
-                        <p>Topic: Simplicity in Life</p>
-                        <h3>Friday Jan 11th, 2022</h3>
+                        <h4 class="p-2">Youth Program</h4>
+                        <p class="h5">Tarbiyah Program</p>
+                        <p class="h6">More details to follow</p>
+                        <div class="h5" id="nextSaturday"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 p-1">
                 <div class="colum-1 ">
                     <div class="text-center text-light">
-                        <h4>Food distribution</h4>
-                        <p>By: Shaike Mahmood Idris</p>
-                        <p>Topic: Simplicity in Life</p>
-                        <h3>Friday Jan 11th, 2022</h3>
+                        <h4 class="p-2">Food distribution</h4>
+                        <p class="h5">At Islamic Center of Laveen</p>
+                        
+                        <div class="h5" id="nextSunday"></div>
                     </div>
                 </div>
             </div>
@@ -270,11 +291,8 @@
                 </h5>
                 <img src="masjid-pics/quran.jpeg" class="img-fluid rounded-3" alt="Quran Images">
                 <div class="text-center g-4 p-4">
-                    <p>Bootstrap is a powerful front-end framework for faster and easier web development.
-                        Our Bootstrap
-                        tutorials will help you to learn all the features of latest Bootstrap 4 framework so that you
-                        can
-                        easily create responsive websites.</p>
+                    <p>Welcome to the Islamic Center of Laveen (ICL) website which provides a brief overview of the Noor Al-Quran School’s academic
+                         activities and achievements, as well as its policies and procedures.</p>
                 </div>
                 <div class="col text-center">
                     <p><a href="Education.html" class="btn btn-success">Learn More &raquo;</a></p>
@@ -390,37 +408,6 @@
         </footer>
         <!-- Footer -->
     </div>
-
-    <script type="text/javascript">
-        window.onload = function todayDate() {
-            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            var today = new Date();
-            document.getElementById('today-date').innerHTML = today.toLocaleDateString("en-US", options);
-        }
-    </script>
-
-    <!--Scroll to the top button-->
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 
 </body>
 
