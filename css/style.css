@@ -181,6 +181,15 @@ a.flink {
   font-family: Helvetica;
   color: purple;
 }
+.heading3-mc4 {
+  padding-top: 20px;
+  text-align:left !important;
+  color: #070404;
+  font-style: bold;
+  font-size: 1.4em;
+  font-family: Helvetica;
+  color: purple;
+}
 
 .ramadan-date {
   font-size: 18px;
