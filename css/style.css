@@ -274,3 +274,9 @@ a.flink {
   height: 400px !important;
   object-fit: cover;
 }
+
+.brochure-img-mc4 {
+  width:  90%;
+  height: 100% !important;
+  object-fit: cover;
+}
